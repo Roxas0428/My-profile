@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -94,4 +94,90 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #fff;
 }
+.header-logo {
+  margin: 0;
+}
+.header-logo > a {
+  display: block;
+  color: transparent;
+}
+/* .header-nav {} */
+.header-navlist {
+  padding: 10px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  z-index: 0;
+}
+.header-navitem > a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.25s;
+}
+.header-navitem > a:hover {
+  border-bottom: 2px solid #333;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 12px;
+  }
+}
+body {
+  background-color: #dadada;
+}
+.hero {
+  width: 100%; /* ウインドウサイズの横幅 */
+  height: 100%; /*ウインドウサイズの縦幅*/
+  position: relative;
+  overflow: hidden;
+}
+.hero > strong {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+}
+.image {
+  height: 1500px;
+  width: 1800px;
+}
+/* .hero > video {
+  position: absolute;
+  z-index: 1;
+  width: auto;
+  height: 100%;
+} */
+/* .hero-particles {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+} */
